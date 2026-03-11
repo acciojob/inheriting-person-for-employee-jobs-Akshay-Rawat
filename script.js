@@ -1,14 +1,14 @@
 class Person{
-	constructor(name: string, age: number){
+	constructor(name ,age){
 		this.name=name
 		this.age=age
 	}
 	greet(){
-		console.log(`My name is ${this.name}, I am ${this.age} years old.`)
+		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`)
 	}
 }
 class Employee extends Person{
-	constructor(name: string, age: number, jobTitle: string){
+	constructor(name, age, jobTitle){
 		super(name,age)
 		this.jobTitle=jobTitle
 	}
